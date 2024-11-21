@@ -1,0 +1,202 @@
+/* Importing Libre Caslon Display font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+/* General styling for the body */
+body {
+    font-family: 'Libre Caslon Display', serif; /* Apply font globally */
+    height: 100%; /* Make the body take the full height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align at the top instead of center */
+    background-color: #f5f5dc;
+}
+
+/* Container holding content */
+.container {
+    width: 100%;
+    max-width: 800px; /* Control the container width */
+    padding: 20px;
+    text-align: center; /* Center the text inside */
+    color: #556B2F; /* Earthy color for text */
+    border-radius: 10px;
+    margin-top: 20px; /* Adding space at the top */
+}
+
+/* Styling for the heading */
+h1, h2, h3 {
+    color: #e97451;
+    font-size: 72px;
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Styling for the paragraph or div text */
+div {
+    font-size: 20px; /* Adjusted font size */
+    color: #556B2F;
+    font-family: 'Libre Caslon Display', serif; /* Apply font to the div */
+    margin-top: 20px;
+}
+
+/* Styling for the link */
+a {
+    color: #8B4513; /* Earthy brown color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Button styling */
+button {
+    background-color: #f0e68c; /* Khaki button color */
+    color: #3e2723;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d2b48c; /* Tan button hover */
+}
+
+/* Contact button at the bottom */
+.contact-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-btn:hover {
+    background-color: #218838;
+}
+
+/* Email Section */
+.email-section {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.email-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.email-section a:hover {
+    text-decoration: underline;
+}
+
+/* Popup Styles */
+.popup {
+    display: none; /* Hide the popup initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure the popup is on top */
+    animation: fadeIn 0.3s ease-out; /* Animation for the popup */
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.popup-content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.popup-content a:hover {
+    text-decoration: underline;
+}
+
+/* Close button styles */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Animation for fading in the popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Styling for social media buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px; /* Makes the buttons rounded */
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-btn:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.social-btn.linkedin {
+    background-color: #0077b5;
+}
+
+.social-btn.twitter {
+    background-color: #1da1f2;
+}
+
+.social-btn.github {
+    background-color: #333;
+}
+
+.social-btn.instagram {
+    background-color: #e1306c;
+}
+
+.social-btn.email {
+    background-color: #f39c12;
+}
